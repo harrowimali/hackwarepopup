@@ -44,9 +44,8 @@
                 margin-top: 20px;
                 margin-bottom: 20px;
                 width: 60px;
-                height: 20px;
+                height: 30px;
                 background-color: #fff;
-                border: 1px solid #fff;
                 font-size: 10px;
             }
             
@@ -56,12 +55,36 @@
                 -ms-transition: all .5s ease;
                 -o-transition: all .5s ease;
                 transition: all .5s ease;
-                color: aliceblue;
-                background-color: #000;
+                color: #000;
+                background-color: rgb(100,181,100);
             }
             
             #pass{
                 margin-top: 10px;
+            }
+            
+            #x{
+            color:rgb(231, 76, 60);
+            float:right;
+            }
+            
+            #x:hover{
+                -webkit-transition: all .5s ease;
+                -moz-transition: all .5s ease;
+                -ms-transition: all .5s ease;
+                -o-transition: all .5s ease;
+                transition: all .5s ease;
+                color: aliceblue;
+            }
+            
+            a:hover{
+                text-decoration: none;
+                -webkit-transition: all .5s ease;
+                -moz-transition: all .5s ease;
+                -ms-transition: all .5s ease;
+                -o-transition: all .5s ease;
+                transition: all .5s ease;
+                color: aliceblue;
             }
 		</style>
 
@@ -72,8 +95,10 @@
 		<div id="popupBox">
 			<div class="popupBoxWrapper">
 				<div class="popupBoxContent">
-                    <a href="javascript:void(0)" onclick="toggle_visibility('popupBox');"><i class="fa fa-times" style="color:rgb(231, 76, 60); float:right;"></i></a>
+                    <a href="javascript:void(0)" onclick="toggle_visibility('popupBox');"><i class="fa fa-times" id="x"></i></a>
+                    
 					<h3><center>Sign in!</center></h3>
+                    
                     <div class="popuptext">
 					<p>Email</p> <input type="email" class="form-control loginEmail" id="emailid" placeholder="Enter email">
                     <p id="pass">Password</p><input type="password" class="form-control loginEmail" id="emailid" placeholder="Enter password">
@@ -81,13 +106,14 @@
                     
                     <button type="submit" class="btn btn-default">Submit</button>
                     
+                    <p>Didn't sign up yet? No problem! Make an account <a class="typeform-share link" href="https://hackware.typeform.com/to/CNOtal" data-mode="1" target="_blank">here</a>!</p>
 				</div>
 			</div>
 		</div>
 
 		<div id="wrapper">
 
-			<p>Click <a href="javascript:void(0)" onclick="toggle_visibility('popupBox');">here</a> to see popup box one.</p>
+			<p>Click <a href="javascript:void(0)" onclick="toggle_visibility('popupBox');">here</a> to see the popup.</p>
 		</div>
 
 	</body>
